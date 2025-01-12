@@ -1,0 +1,22 @@
+---
+import Logo from '../assets/logo.svg';
+import '@fontsource/poppins/400.css';
+import '@fontsource/poppins/500.css';
+import '@fontsource/poppins/600.css';
+import Container from '../components/Container.astro';
+---
+<Container>
+	<div class="text-center gap-8 flex flex-col items-center sm:mx-10 md:mx-36 xl:mx-60">
+		<img src={Logo.src} alt="Logo">
+		<h2 class="sm:text-4xl text-5xl font-semibold">Join our newsletter</h2>
+		<p class="text-[#6C727F] sm:text-base text-xl">Keep up with our latest collections, exclusive deals, and special offers! We introduce a new collection every week, so stay tuned to snag the hottest items just for you.</p>
+		<form class="bg-white flex flex-col p-8 rounded-lg gap-7 shadow-xl">
+			<input class="border-[#E5E7EB] min-w-[520px] md:min-w-[500px] bg-[#F9FAFB] border-[1px] placeholder:font-medium placeholder:text-base placeholder:text-center placeholder:text-[#394150] rounded-lg p-4" type="email" placeholder="Enter your email address">
+			<button class="bg-[#284BCE] min-w-[520px] font-semibold text-center rounded-lg p-4 text-white md:min-w-[500px]">Subscribe now</button>
+			<p class="text-sm">Your email is 100% confidential and won’t send you any spam.</p>
+		</form>
+	</div>
+</Container>
+
+<style is:global>
+</style>

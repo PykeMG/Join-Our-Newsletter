@@ -1,13 +1,16 @@
+---
+import Favicon from '../assets/favicon.ico'
+---
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<link rel="icon" type="image/svg+xml" href={Favicon} />
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
+	<body class="bg-[#F9FAFB]">
 		<slot />
 	</body>
 </html>
@@ -18,5 +21,6 @@
 		margin: 0;
 		width: 100%;
 		height: 100%;
+		font-family: 'Poppins', sans-serif;
 	}
 </style>
